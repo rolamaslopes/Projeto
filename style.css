@@ -1,0 +1,370 @@
+body {
+  margin: 0;
+  padding: 0;
+  color: #242424;
+  font-family: sans-serif;
+  word-wrap: break-word;
+  overflow-wrap: break-word;
+}
+
+html{
+scroll-behavior: smooth;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 900;
+  color: #000000;
+  text-align: center;
+  
+  
+  
+}
+
+.wrapper {
+  width: 100%;
+  margin: 0 auto;
+}
+
+main {
+  display: block;
+  background-color: #000000;
+}
+
+.container {
+  width: 980px;
+  max-width: 760px;
+  margin: auto;
+  padding: 0 20px;
+
+
+}
+
+footer h2{
+  border-bottom: 2px dashed rgb(0, 0, 0);
+  border-top: 2px dashed rgb(0, 0, 0);
+}
+
+footer article {
+  width: 120px;
+  height: 450px;
+  display: inline-block;
+  margin: 20px;
+  border: 1px solid rgb(0, 0, 0);
+  border-radius: 10px;
+  box-shadow: 3px 3px 5px;
+  padding: 20px;
+  vertical-align: top;
+   
+   
+}
+
+footer img {
+  width: 60%; 
+
+}
+
+.comprar-btn{
+  vertical-align: text-bottom;
+}
+
+figcaption{
+  font-family:Monospace;
+  font-size: 18px;
+}
+
+p {
+  font-size: 25px;
+  font-family:Roboto;
+}
+
+section{
+  text-align: center;
+}
+
+
+section.module p {
+  margin-bottom: 40px;
+}
+
+section.module:last-child {
+  margin-bottom: 0;
+}
+
+section.module h2 {
+  margin-bottom: 40px;
+  font-size: 30px;
+}
+
+section.module.content {
+  padding: 40px 0;
+  background: #fff;
+}
+
+section.module.parallax {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh !important;
+  width: 100%;
+  position: relative;
+  overflow: hidden;
+  background-position: 50% 50%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+}
+
+section.module.parallax:after {
+  content: "";
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  z-index: 8;
+  background: -moz-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: -webkit-linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+  background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 0, rgba(0, 0, 0, 0) 40%, #000 100%);
+}
+
+
+section.module.parallax-1 {
+  background-image: url("https://static.ricmais.com.br/uploads/2020/08/mercado-curitiba-parana.jpg");
+}
+
+section.module.parallax-2 {
+  background-image: url("https://www.cidademarketing.com.br/marketing/wp-content/uploads/2019/05/mercado_extra.jpg");
+}
+
+section.module.parallax-3 {
+  background-image: url("https://blog.emania.com.br/wp-content/uploads/2019/01/o-mercado-e-lugar-de-compras-e-de-fotos-bizarras-Blog-eMania-capa-15-01.jpg");
+}
+
+section.module.parallax h1 {
+  color: #FFF;
+  text-align: center;
+  font-size: 78px;
+  z-index: 50;
+  text-transform: uppercase;
+}
+
+header {
+  display: flex;
+  align-items: center;
+  background-color: #eee;
+  padding: 10px;
+  border: 15px solid black;
+  padding: 0;
+}
+
+header img {
+  width: 100%;
+}
+
+nav {
+  background-color: #000000fb;
+  color: #fff;
+  padding: 10px;
+
+
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav li {
+  margin-right: 20px;
+}
+
+nav a {
+  color: #fff;
+  text-decoration: none;
+}
+
+nav a:hover {
+  text-decoration: underline;
+}
+
+.comprar-btn {
+  background-color: black;
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  font-size: 16px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+
+@media all and (max-width: 720px){
+  section.module h2 {
+    font-size: 32px;
+  }
+
+  .module h2,
+  p {
+    padding: 0 8px;
+  }
+
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+
+
+  section.module.parallax h1 {
+    font-size: 36px;
+    width: auto;
+  }
+
+}
+
+
+form {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+label {
+  display: block;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+input,
+textarea {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-bottom: 20px;
+}
+
+input[type="submit"] {
+  background-color: #002fff;
+  color: white;
+  font-weight: bold;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  width: 625px;
+  ;
+}
+
+input[type="submit"]:hover {
+  background-color: #002fff;
+}
+
+.menu{
+    display: none;
+}
+
+@media (max-width: 720px){
+  
+  .module.content ul{
+    display: none;
+  }
+  
+  nav{
+    height: 70px;
+  }
+
+  .menu{
+    display: block;
+  }
+
+  menu.active{
+    display: flex;
+  }
+}
+
+.menu{
+  margin-left: 30px;
+  margin-top: 10px;
+}
+
+.menu .menu-faketrigger{
+  position: absolute;
+  z-index: 1000;
+  width: 35px;
+  height: 35px;
+  opacity: 0;
+  cursor: pointer;
+}
+
+.menu .menu-lines{
+  position: absolute;
+  z-index: 999;
+  width: 35px;
+  height: 35px;
+}
+
+.menu .menu-lines span{
+  display:block;
+  width:35px;
+  height: 5px;
+  margin-bottom: 10px;
+  background-color: #cdcdcd;
+  border-radius: 3px;
+  transition: all ease .2s;
+
+}
+.menu .menu-faketrigger:checked~.menu-lines span{
+  background-color: #232323;
+}
+.menu-faketrigger:checked~.menu-lines span :nth-child(1){
+  transform-origin: 0% 0%;
+  transform: rotate(45deg) scaleX(1.25);
+}
+.menu-faketrigger:checked~.menu-lines span :nth-child(2){
+  opacity: 0;
+}
+.menu-faketrigger:checked~.menu-lines span :nth-child(3){
+  transform-origin: 0% 100%;
+  transform: rotate(-45deg) scaleX(1.25);
+}
+
+.menu ul{
+  position: absolute;
+  z-index: 998;
+  left: 0;
+  top: 0;
+  width: 300px;
+  height: calc(100vh - 100px);
+  padding-top: 100px;
+  background-color: #ededed;
+  margin-left:-300px;
+  transition: all ease .2s;
+}
+
+.menu-faketrigger:checked ~ ul{
+  margin-left: 0;
+}
+.menu ul li{
+  padding: 10px 30px;
+}
+.menu ul li a{
+  text-decoration: none;
+  color:#000;
+  font-size: 22px;
+  transition:all ease .3s;
+
+}
+
+.menu ul li a:hover{
+  color:#999;
+}
